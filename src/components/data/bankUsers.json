@@ -1,0 +1,24 @@
+[
+    {
+        "id":0,
+        "name": "John Noriel",
+        "balance": 5000
+    },
+
+    {
+        "id":1,
+        "name": "Jepoy Juson",
+        "balance": 10000
+    },
+
+    {
+        "id":2,
+        "name": "Renz Mariano",
+        "balance": 5000
+    },
+    {
+        "id":3,
+        "name": "Howard Beduria",
+        "balance": 5000
+    }
+]

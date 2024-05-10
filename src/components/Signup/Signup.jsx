@@ -28,7 +28,7 @@ function Signup() {
                      <button className='btn btn-primary'>Sign Up</button>
                  </div>
                  <p className='text-end mt-2'>
-                    Already Registered?<Link to="/" className='ms-2'>Sign in</Link>
+                    Already Registered?<Link to="/" className='ms-2'>Log in</Link>
                  </p>
          </form>
      </div>

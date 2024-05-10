@@ -6,8 +6,9 @@ import Navbar from './components/Navbar/Navbar'
 import Deposit from './components/Deposit/Deposit'
 import Sidebar from'./components/Sidebar/Sidebar'
 import Signup from './components/Signup/Signup';
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Withdraw from './components/Withdraw/Withdraw.';
+import Transfer from './components/Transfer/Transfer'
 import Users from './components/Users/Users';
 
 
@@ -18,17 +19,19 @@ function App() {
       <Navbar />
     </nav>
     <section>
-    <BrowserRouter>
+    <Router>
           <Routes>
               <Route path ='/' element={<Login />}></Route>
               <Route path ='/signup' element={<Signup />}></Route>
+              // <Route path ='/deposit' element={<Deposit />}></Route>
           </Routes>
-    </BrowserRouter>
+    </Router>
     </section>
     <main>
     {/* <Sidebar /> */}
     {/* <Deposit /> */}
     {/* <Withdraw /> */}
+    {/* <Transfer /> */}
     {/* <Users /> */}
     </main>
   </div>
