@@ -8,20 +8,18 @@ import { Link } from 'react-router-dom';
 
 function navbar() {
   return (
-    <Navbar bg="light" data-bs-theme="light">
-        <Container>
-            <Navbar.Brand href="#home">RufusBank</Navbar.Brand>
-            <Nav className="me-auto" >
-                <Nav.Link href="#login">Login</Nav.Link>
-                <Nav.Link href="#bankapp">Bank App</Nav.Link>
-                <Nav.Link href="#deposit">Deposit</Nav.Link>
-                <Nav.Link href="#withdraw">Withdraw</Nav.Link>
-                <Nav.Link href="#moneytransfer">Transfer</Nav.Link>
-                <Nav.Link href="#expenses">Expenses</Nav.Link>
-                <Nav.Link href="#allusers">All Users</Nav.Link>
-            </Nav>
-        </Container>
-     </Navbar>
+<Navbar bg="light" expand="lg">
+      <Container>
+        <Navbar.Brand href="#home">RufusBank</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link href="#allusers">Hello,Johhneil!</Nav.Link>
+            <Nav.Link href="#allusers">Log out</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   )
 }
 

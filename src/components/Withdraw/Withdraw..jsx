@@ -27,39 +27,24 @@ function Withdraw() {
 
 
   return (
-    <div className='login template d-flex align-items-center vh-100 bg-primary'>
-        <div className='d-flex justify-content-center align-items-center w-100'>
-          <div className='form-container-left'>
-            <div className='form-container p-5 rounded bg-white'>
-              <form onSubmit={handleWithdrawal}>
-                <h3 className='text-center'>Withdraw</h3>
-                <div className='mb-2'>
-                  <p>Account Name: Johnneil Mendoza</p>
-                </div>
-                <div className='mb-2'>
-                  <p>Account Balance: ${balance}</p>
-                </div>
-                <div className='mb-2'>
-                  <label htmlFor='amount'>Amount:</label>
-                  <input type='number' placeholder='Enter Amount to Withdraw' className='form-control' />
-                </div>
-                <div className='d-grid'>
-                  <button className='btn btn-primary'>Withdraw</button>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div className='form-container-right'>
-            <div className='form-container p-5 rounded bg-white'>
-              <form>
-                <h3 className='text-center'>Welcome to Rufus Bank!</h3>
-                <h3 className='text-center'>A partner for life!</h3>
-                {/* Add content for the second form here */}
-              </form>
-            </div>
-          </div>
+    <div className='form-container-left'>
+    <div className='form-container p-3 rounded bg-white'>
+      <form onSubmit={handleWithdrawal}>
+        <h4 className='text-center mb-3'>Withdraw</h4>
+        <div className='mb-1'>
+          <p className='mb-1'>Account Name: Johnneil Mendoza</p>
+          <p className='mb-1'>Account Balance: ${balance}</p>
         </div>
-      </div>
+        <div className='mb-2'>
+          <label htmlFor='amount' className='form-label' >Amount:</label>
+          <input type='number' placeholder='Enter Amount to Withdraw' className='form-control' style={{ width: '70%' }}/>
+        </div>
+        <div className='d-grid'>
+          <button className='btn btn-primary' style={{ width: '70%' }}>Withdraw</button>
+        </div>
+      </form>
+    </div>
+  </div>
   )
 }
 

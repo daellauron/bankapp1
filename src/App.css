@@ -1,0 +1,18 @@
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+  }
+  
+  main > * {
+    flex: 1;
+  }
+
+ 
+  section {
+    margin-left: 40px;
+    margin-top :60px;
+  }

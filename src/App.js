@@ -9,7 +9,11 @@ import Signup from './components/Signup/Signup';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Withdraw from './components/Withdraw/Withdraw.';
 import Transfer from './components/Transfer/Transfer'
+import Budgetapp from './components/Budgetapp/Budgetapp';
 import Users from './components/Users/Users';
+import data from './components/data/bankUsers.json';
+import SubmissionTable from './components/SubmissionTable/SubmissionTable';
+import BadBank from './components/SubmissionTable/SubmissionTable';
 
 
 function App() {
@@ -18,22 +22,17 @@ function App() {
     <nav>
       <Navbar />
     </nav>
-    <section>
-    <Router>
-          <Routes>
-              <Route path ='/' element={<Login />}></Route>
-              <Route path ='/signup' element={<Signup />}></Route>
-              // <Route path ='/deposit' element={<Deposit />}></Route>
-          </Routes>
-    </Router>
-    </section>
     <main>
     {/* <Sidebar /> */}
-    {/* <Deposit /> */}
-    {/* <Withdraw /> */}
-    {/* <Transfer /> */}
-    {/* <Users /> */}
+    <Deposit users={data}/>
+   <Withdraw users={data} />
+    <Transfer users={data} />
+    <Budgetapp users={data} />
     </main>
+    <section>
+    <Users users={data} />
+    {/* < SubmissionTable/> */}
+    </section>
   </div>
 
   );
